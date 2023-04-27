@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useState } from "react";
+import { IoMdClose } from 'react-icons/io';
 
 interface ModalProps {
     isOpen?: boolean;
@@ -124,7 +125,33 @@ const Modal: React.FC<ModalProps> = ({
                                 focus:outline-none
                             "
                         >
-                            
+                           {/* CONTENT */}
+                           <div
+                            className="
+                                flex
+                                items-center
+                                p-6
+                                rounded-t
+                                justify-center
+                                relative
+                                border-b-[1px]
+                            "
+                           >
+                            <button
+                                className="
+                                    p-1
+                                    border-0
+                                    hover:opacity-70
+                                    transition
+                                    absolute
+                                    left-9
+                                "   
+                            >
+                                <IoMdClose size={18} />
+                            </button>
+
+                           </div>
+
                         </div>
 
                     </div>
