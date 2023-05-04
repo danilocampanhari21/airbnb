@@ -11,3 +11,5 @@ const useRegisterModal = create<RegisterModalStore>((set) => ({
     onOpen: () =>({ isOpen: true }),
     onClose: () =>({ isOpen: false }),
 }));
+
+export default useRegisterModal;
